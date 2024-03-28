@@ -7,13 +7,11 @@ import { deleteContact } from "../../redux/contactsSlice";
 
 export default function Contact({ contact }) {
   const dispatch = useDispatch();
-  console.log(contact);
 
   if (!contact || contact.length === 0) {
     return null;
   }
 
-  console.log(contact.id);
   const handleDelete = () => {
     dispatch(deleteContact(contact.id));
   };
