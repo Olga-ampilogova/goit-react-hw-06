@@ -20,7 +20,7 @@ export default function Contact({ contact }) {
     <li className={css.item}>
       <div>
         <p className={css.title}>
-          <HiUser className="my-icon" size="20" /> Name:{contact.name}
+          <HiUser className="my-icon" size="20" /> Name: {contact.name}
         </p>
 
         <p className={css.title}>
